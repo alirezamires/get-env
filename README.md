@@ -26,10 +26,10 @@ dependencies {
 ## Usage
 
 ```kotlin
-import env
+import io.github.alirezamires.env
 
 val port: Int = env("PORT", 3000)
-val isProduction: Boolean = env("NODE_ENV", "development") == "production"
+val isProduction: Boolean = env("ENV", "development") == "production"
 
 println("Server running on port \$port, mode: ${if (isProduction) "Production" else "Development"}")
 ```

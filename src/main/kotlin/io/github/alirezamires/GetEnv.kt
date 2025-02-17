@@ -1,8 +1,8 @@
 package io.github.alirezamires
-
+import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
-val logger = LoggerFactory.getLogger("alirezamires.get_env")
+val logger:Logger = LoggerFactory.getLogger("alirezamires.get_env")
 inline fun <reified T> GetEnv(
     key: String,
     default: T,

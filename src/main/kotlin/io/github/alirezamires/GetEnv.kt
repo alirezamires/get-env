@@ -3,7 +3,7 @@ import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
 val logger:Logger = LoggerFactory.getLogger("alirezamires.get_env")
-inline fun <reified T> GetEnv(
+inline fun <reified T> env(
     key: String,
     default: T,
 ): T =
